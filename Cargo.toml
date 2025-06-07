@@ -1,0 +1,10 @@
+[package]
+name = "web_socket_server"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+tokio = { version ="1", features = ["full"] }
+sha-1 = "0.10"
+digest = "0.10"
+base64 = "0.21"

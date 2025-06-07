@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WS Test</title>
+    </head>
+    <body>
+        <script>
+            const ws = new WebSocket("ws://localhost:9001");
+            ws.onopen = () => ws.send("Hello from browser!");
+            ws.onmessage = (e) => console.log("Received:", e.data);
+
+            ws.onerror = (e) => console.error("Websocket error: ", e);
+        </script>
+    </body>
+</html>
